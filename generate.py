@@ -17,7 +17,7 @@ with open('index.html', 'w') as idx:
         idx.write(fh.read())
 
     data = ('<p>' +
-            data[data.find('ppTOP is'):].replace('<code>shell', '<code>'))
+            data[data.find('ppTOP is'):data.find('p.s. Code in ')].replace('<code>shell', '<code>'))
 
     for d in data.split('\n'):
         if d.find('"asciicast"') != -1:

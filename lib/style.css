@@ -1,6 +1,6 @@
 body {
   background: #000;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 .header {
@@ -22,6 +22,12 @@ body {
   line-height: 60px;
   color: #ccc;
   text-decoration: none;
+}
+.copyright {
+  margin-top: 30px;
+  text-align: center;
+  color: #ccc;
+  font-size: 12px;
 }
 .menu-holder {
   display: none;
