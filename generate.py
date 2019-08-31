@@ -17,15 +17,16 @@ with open('index.html', 'w') as idx:
         idx.write(fh.read())
 
     data = ('<p>' +
-            data[data.find('ppTOP is'):data.find('p.s. Code in ')].replace('<code>shell', '<code>'))
+            data[data.find('ppTOP is'):data.find('p.s. Code in ')].replace(
+                '<code>shell', '<code>'))
 
     for d in data.split('\n'):
         if d.find('"asciicast"') != -1:
             asciinema_id = d.split('"')[1].split('/')[-1]
-            d = (
-                ('<script id="asciicast-{i}" ' +
-                 'src="https://asciinema.org/a/{i}.js" async></script>').format(
-                     i=asciinema_id))
+            d = ((
+                '<div class="asciinema-container"><script id="asciicast-{i}" ' +
+                'src="https://asciinema.org/a/{i}.js" async></script></div>'
+            ).format(i=asciinema_id))
         elif d.find(' href ') == -1 and d.find('https://') != -1:
             d = linkify(d).replace(' rel="nofollow"', '')
         idx.write(d + '\n')
