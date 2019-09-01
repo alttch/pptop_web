@@ -25,8 +25,8 @@ with open('index.html', 'w') as idx:
             asciinema_id = d.split('"')[1].split('/')[-1]
             d = ((
                 '<div class="asciinema-container"><script id="asciicast-{i}" ' +
-                'src="https://asciinema.org/a/{i}.js" async></script></div>'
-            ).format(i=asciinema_id))
+                'src="https://asciinema.org/a/{i}.js" ' +
+                'async data-size="9"></script></div>').format(i=asciinema_id))
         elif d.find(' href ') == -1 and d.find('https://') != -1:
             d = linkify(d).replace(' rel="nofollow"', '')
         idx.write(d + '\n')
