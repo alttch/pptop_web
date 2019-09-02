@@ -1,0 +1,48 @@
+h2 {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 32px;
+  color: #ff4c53;
+}
+h2::before {
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  width: 40px;
+  height: 4px;
+  background: #4d4d4d;
+}
+p, li {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ccc;
+}
+a {
+  color: #29abe2;
+  text-decoration: underline;
+}
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+code {
+  padding: 5px 8px;
+  margin: 12px; 5px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #17C13B;
+  background: #333;
+  border: 1px solid #555;
+  font-style: italic;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+ul {
+  padding-inline-start: 20px;
+  line-height: 32px;
+}
+p > img {
+  max-width: 100%;
+  margin: 20px 0;
+  border: 2px solid #b3b3b3;
+}
