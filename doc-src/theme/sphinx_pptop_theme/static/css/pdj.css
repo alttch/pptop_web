@@ -17,10 +17,14 @@ body {
   background: #111;
 }
 
+div[class^='highlight'] pre {
+  font-family: Hack, Input Mono, monospace, sans-serif;
+}
 
 @media screen and (min-width: 768px) {
   .wy-nav-side{
       width: 224px;
+      min-height: auto !important;
   }
   nav.stickynav {
     position: absolute;
@@ -222,7 +226,7 @@ wy-menu-vertical li.toctree-l2.current>a {
 }
 
 .highlight{
-    background: #000 !important;
+    background: #252525 !important;
 }
 
 .highlight pre,
