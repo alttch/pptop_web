@@ -330,21 +330,6 @@ blockquote, q {
     quotes: "" "";
 }
 
-blockquote:before {
-    color: #807f7f;
-    content: "\201C";
-    display: block;
-    font-family: "Droid Serif", "Times New Roman", serif;
-    font-size: 48px;
-    font-size: 4.8rem;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 1;
-    position: absolute;
-    top: -15px;
-    left: -40px;
-}
-
 .flatpage{
 
 }
