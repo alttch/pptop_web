@@ -39,6 +39,7 @@ body {
   padding: 7px 17px;
   font-size: 16px;
   color: #ccc;
+  text-decoration: underline;
 }
 .menu-item:visited {
   color: #ccc;
@@ -54,6 +55,9 @@ body {
   font-size: 16px;
   color: #ff4c53;
   background: none;
+}
+.menu-active {
+  text-decoration: underline;
 }
 .menu-active:visited {
   color: #ff4c53;
