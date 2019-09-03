@@ -19,8 +19,7 @@ If method is specified neither in configuration, nor in command line, *auto* is
 used.
 
 All methods require *gdb* and of course an access to the process, so you must
-be root or launch ppTOP under the same user. Only connections to Python 3
-processes are supported.
+be root or launch ppTOP under the same user.
 
 native
 ======
