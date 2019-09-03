@@ -29,7 +29,7 @@ sys.path.insert(0, '/opt/pptop')
 sys.path.insert(0, (Path() / 'theme').as_posix())
 sys.path.insert(0, Path().absolute().parent.as_posix())
 
-import sitemenu
+import siteconf
 
 # -- General configuration ------------------------------------------------
 
@@ -320,4 +320,4 @@ latex_elements = {
 # """.format(
 # versionnum=version,)
 
-html_context = {'menu': sitemenu.menu, 'menu_active': 'Docs'}
+html_context = {'menu': siteconf.menu, 'menu_active': 'Docs'}

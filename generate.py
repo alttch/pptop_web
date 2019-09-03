@@ -6,9 +6,9 @@ import requests
 from jinja2 import Template
 from bleach import linkify
 
-import sitemenu
+import siteconf
 
-html_context = {'menu': sitemenu.menu, 'menu_active': 'Home'}
+html_context = {'menu': siteconf.menu, 'menu_active': 'Home'}
 
 with open('index.html', 'w') as idx:
 
