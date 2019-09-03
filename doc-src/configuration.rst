@@ -44,6 +44,10 @@ with command like options *-R* (disables colors and glyphs) and
 *--disable-glyphs* (disable glyphs only). It's recommended to disable unicode
 glyphs if you have an old terminal or working via old SSH client.
 
+ppTOP automatically detects 256-color terminals (if *$TERM* env variable ends
+with *256color*). However, some 256-color terminals may not have it. In this
+case, you may set *colors: 256* in config, to enforce 256-color palette.
+
 Plugins configuration
 =====================
 
