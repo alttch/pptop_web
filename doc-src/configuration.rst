@@ -18,7 +18,7 @@ Main configuration
 ==================
 
 Option *inject-method* specifies :doc:`proces inject<process_injection>` method
-can have values "native", "loadcffi", "unsafe" and "auto". Can be overriden
+and can have values "native", "loadcffi", "unsafe" and "auto". Can be overriden
 with "--inject-method" in command line.
 
 Section *console* configures default console options:
