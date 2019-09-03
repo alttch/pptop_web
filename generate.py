@@ -36,6 +36,7 @@ with open('index.html', 'w') as idx:
                 'async data-size="9"></script></div>').format(i=asciinema_id))
         elif d.find(' href ') == -1 and d.find('https://') != -1:
             d = linkify(d).replace(' rel="nofollow"', '')
+        d = d.replace('<img src="https://img.shields.io/', '<img style="border: 0px" src="https://img.shields.io/')
         idx.write(d + '\n')
 
     with open('tpl/index_footer.html') as fh:
