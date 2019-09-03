@@ -31,6 +31,15 @@ div[class^='highlight'] pre {
   min-height: auto;
 }
 
+code.sig-name {
+  font-size: 100%;
+  font-family: Hack, Input Mono, monospace, sans-serif;
+}
+
+.sig-param {
+  font-family: Hack, Input Mono, monospace, sans-serif;
+}
+
 @media screen and (min-width: 768px) {
   .wy-nav-side{
       width: 224px;
