@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 
+import sys
 import markdown2
 import requests
+from jinja2 import Template
 from bleach import linkify
+
+import sitemenu
+
+html_context = {'menu': sitemenu.menu, 'menu_active': 'Home'}
 
 with open('index.html', 'w') as idx:
 
@@ -14,7 +20,8 @@ with open('index.html', 'w') as idx:
     data = markdown2.markdown(r.text)
 
     with open('tpl/index_header.html') as fh:
-        idx.write(fh.read())
+        template = Template(fh.read())
+        idx.write(template.render(html_context))
 
     data = ('<p>' +
             data[data.find('ppTOP is'):data.find('p.s. Code in ')].replace(

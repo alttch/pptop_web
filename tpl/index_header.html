@@ -23,22 +23,18 @@
   <div class="header">
     <a href="/" class="logo"></a>
     <div class="container menu-holder">
-      <a href="/" class="menu-item menu-active">Home</a>
-      <a href="/doc" class="menu-item">Docs</a>
-      <a href="https://github.com/alttch/pptop" class="menu-item">Code</a>
-      <a href="https://pypi.org/project/pptop/" class="menu-item">Download</a>
-      <a href="https://github.com/alttch/pptop/issues" class="menu-item">Issues</a>
+      {%- for m in menu %}
+      <a href="{{ m[1] }}" class="menu-item{%- if m[0] == menu_active %} menu-active{%- endif %}">{{ m[0] }}</a>
+      {%- endfor %}
     </div>
     <div class="mobile-menu-btn" onclick="openMenu()"></div>
   </div>
   <div class="mobile-menu" onclick="closeM(event);">
     <div id="mob_menu" class="col">
       <div class="mobile-menu-btn" onclick="closeMenu()"></div>
-      <a href="/" class="menu-item menu-active">Home</a>
-      <a href="/doc" class="menu-item">Docs</a>
-      <a href="https://github.com/alttch/pptop" class="menu-item">Code</a>
-      <a href="https://pypi.org/project/pptop/" class="menu-item">Download</a>
-      <a href="https://github.com/alttch/pptop/issues" class="menu-item">Issues</a>
+      {%- for m in menu %}
+      <a href="{{ m[1] }}" class="menu-item{%- if m[0] == menu_active %} menu-active{%- endif %}">{{ m[0] }}</a>
+      {%- endfor %}
     </div>
   </div>
   

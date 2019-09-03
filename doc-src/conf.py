@@ -27,6 +27,9 @@ from pathlib import Path
 sys.path.insert(0, '/opt/pptop')
 
 sys.path.insert(0, (Path() / 'theme').as_posix())
+sys.path.insert(0, Path().absolute().parent.as_posix())
+
+import sitemenu
 
 # -- General configuration ------------------------------------------------
 
@@ -53,7 +56,6 @@ napoleon_use_rtype = True
 autoclass_content = 'both'
 
 # html_theme = 'groundwork'
-
 
 # source_parsers = {'.md': CommonMarkParser}
 
@@ -316,4 +318,6 @@ latex_elements = {
 # rst_epilog = """
 # .. |Version| replace:: {versionnum}
 # """.format(
-    # versionnum=version,)
+# versionnum=version,)
+
+html_context = {'menu': sitemenu.menu, 'menu_active': 'Docs'}
