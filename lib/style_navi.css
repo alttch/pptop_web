@@ -51,7 +51,7 @@ body {
 }
 .menu-active, .menu-active:hover {
   margin-bottom: -1px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #111;
   font-size: 16px;
   color: #ff4c53;
   background: none;

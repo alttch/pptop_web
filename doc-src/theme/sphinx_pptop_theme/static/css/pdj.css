@@ -2,6 +2,7 @@
 
 .wy-side-nav-search{
     background-color: #595C5E;
+    padding:0.639em;
 }
 
 .wy-side-nav-search input[type=text] {
@@ -11,6 +12,50 @@
 .header {
   display: none;
   margin-bottom: 25px;
+}
+
+.wy-nav-top i {
+  float: right;
+  margin-top: 6px;
+}
+.wy-side-nav-search > i.fa.fa-bars {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .wy-nav-side.shift {
+    width: 85%;
+    max-width: 300px;
+    right: 0;
+    left: auto;
+    z-index: 1001;
+  }
+  .wy-nav-side {
+    left: auto;
+    right: -300px;
+  }
+  .wy-side-nav-search {
+    padding-right: 50px;
+  }
+  .wy-side-nav-search > i.fa.fa-bars {
+    display: block;
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .wy-nav-content-wrap.shift {
+    position: unset;
+  }
+  .wy-nav-top {
+    line-height: 37px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wy-nav-top {
+    line-height: 41px;
+  }
 }
 
 body {
@@ -53,14 +98,14 @@ code.sig-name {
   }
 
   .wy-nav-content-wrap{
-      margin-left: 200px;
+      margin-left: 224px;
       background: #111;
   }
 }
 
 @media screen and (max-width: 768px) {
     .wy-nav-content{
-	background-color: #111;
+    background-color: #111;
     }
 }
 
@@ -115,10 +160,6 @@ pre > span{
 
 .entry-content{
     margin-right: 3%;
-}
-
-.wy-side-nav-search{
-    padding:0.639em
 }
 
 
@@ -191,7 +232,7 @@ pre > span{
 
 .rst-content{
     z-index: 210;
-    margin-top: -60px;
+    margin-top: 30px;
 }
 
 h2 a,
@@ -297,29 +338,30 @@ wy-menu-vertical li.toctree-l2.current>a {
 }
 
 .fundo-claro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 88px;
     background-color: #595C5E;
-    margin-left: -10%;
-    margin-top: -1.1%;
-    margin-right: -10%;
 }
 
 
 @media screen and (max-width: 980px) {
     pre{
-	overflow-x: scroll;
+  overflow-x: scroll;
     }
 }
 
 
 @media screen and (max-width: 768px){
     .fundo-claro{
-	display:none;
+  display:none;
     }
 
     .rst-content{
-	z-index: 210;
-	margin-top: -20px;
+  z-index: 210;
+  margin-top: -20px;
     }
 
 }
@@ -365,7 +407,7 @@ blockquote, q {
 }
 
 .fa-home:before, .icon-home:before {
-		     content: url('../img/porao-branco.png');
+         content: url('../img/porao-branco.png');
 }
 
 
