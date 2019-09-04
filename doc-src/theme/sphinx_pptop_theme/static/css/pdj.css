@@ -31,7 +31,7 @@ div[class^='highlight'] pre {
   min-height: auto;
 }
 
-code.sig-name {
+code.sig-name, code.descclassname {
   font-size: 100%;
   font-family: Hack, Input Mono, monospace, sans-serif;
 }
