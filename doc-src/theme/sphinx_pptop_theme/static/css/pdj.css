@@ -103,7 +103,7 @@ code.sig-name, code.descclassname {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .wy-nav-content{
     background-color: #111;
     }
@@ -354,7 +354,7 @@ wy-menu-vertical li.toctree-l2.current>a {
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .fundo-claro{
   display:none;
     }
