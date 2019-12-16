@@ -240,8 +240,8 @@ All class methods
 Worker methods
 --------------
 
-All plugins are based on *atasker.BackgroundIntervalWorker*, look `atasker
-<https://atasker.readthedocs.io/en/latest/workers.html#backgroundintervalworker>`_
+All plugins are based on *neotasker.BackgroundIntervalWorker*, look `neotasker
+<https://neotasker.readthedocs.io/en/latest/workers.html#backgroundintervalworker>`_
 library documentation for more details.
 
 Injected part
